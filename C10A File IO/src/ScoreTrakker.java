@@ -1,3 +1,8 @@
+/**
+ * Authors: Madeline McKune, Edward Yi
+ * Assignment: C10A File IO
+ */
+
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.util.ArrayList;

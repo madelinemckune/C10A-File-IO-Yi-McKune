@@ -1,3 +1,9 @@
+commit 87ebc26b347addbbec947e50eee222434cb3f8f7
+Author: madelinemckune <madelinemckune@mymail.mines.edu>
+Date:   Sun Sep 30 19:33:16 2018 -0600
+
+    added names to file
+
 commit bb5be90dcf16c958f4d664d612733b8230f8500c
 Author: madelinemckune <madelinemckune@mymail.mines.edu>
 Date:   Sun Sep 30 19:30:03 2018 -0600

@@ -1,4 +1,7 @@
-
+/**
+ * Authors: Madeline McKune, Edward Yi
+ * Assignment: C10A File IO
+ */
 public class Student implements Comparable<Student> {
 	private String name;
 	private int score;
