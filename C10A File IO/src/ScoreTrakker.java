@@ -22,45 +22,48 @@ public class ScoreTrakker {
 			//read in the title 
 			String trash = in.nextLine();
 			while (in.hasNextLine()) {
+				//student name is first line
 				String fullName = in.nextLine();
+				//followed by score
 				String stringGpa = in.nextLine();
 				int gpa = 0;
 				
 				try {
+					//check if string = int
 					gpa = Integer.parseInt(stringGpa);
+					//create student object
 					Student current = new Student(fullName, gpa);
 					tempStudent.add(current);
+				//throw exception if score is not an int
 				}catch(NumberFormatException n) {
 					System.out.println("Incorrect format for " + fullName + " not a valid score: " + stringGpa);
 					System.out.println("");
 				}
-		
-				//System.out.println(studentFirstName + " " + studentLastName+ " " + gpa);
-				//System.out.println(studentName);
-				
 			}
+			//update the student arrayList
 			students = tempStudent;
-		//} catch (FileNotFoundException e) {
-			// TODO Auto-generated catch block
-			//e.printStackTrace();
-	//	}
 		
 	}
 	
 	public void printInOrder() {
+		//sort for comparable
 		Collections.sort(students);
+		//iterative for loop to print student objects
 		for(Student s: students) {
 			System.out.println(s);
 		}
 	}
 	
 	public void processFiles() throws FileNotFoundException {
+		//for the current file name
 		for(String f : this.files) {
+			//check if it is a valid file
 			try {
 				this.loadDataFromFile(f);
 				this.printInOrder();
 				System.out.println("");
 			}
+			//if not a valid file
 			catch(FileNotFoundException e){
 				System.out.println("Can't open file: " + f);
 				System.out.println("");
@@ -69,6 +72,7 @@ public class ScoreTrakker {
 		
 		
 	}
+	//main that creates scoreTrakker object
 	public static void main (String [] args) throws FileNotFoundException{
 		ScoreTrakker s = new ScoreTrakker();
 		s.processFiles();
