@@ -1,3 +1,9 @@
+commit 9b37070a9dc5524a56444c17b6921c45c67eb094
+Author: madelinemckune <madelinemckune@mymail.mines.edu>
+Date:   Sun Sep 30 19:44:57 2018 -0600
+
+    added git ignore
+
 commit 87ebc26b347addbbec947e50eee222434cb3f8f7
 Author: madelinemckune <madelinemckune@mymail.mines.edu>
 Date:   Sun Sep 30 19:33:16 2018 -0600
